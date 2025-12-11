@@ -43,7 +43,7 @@ body {
 }
 /* Hero Section Styles */
 .hero {
-    backdrop-filter: blur(10px);
+    
     background-image:url('BG.png');
     background-size: 70px;
     background-position: 0% 50%;
@@ -64,25 +64,28 @@ animation: hero-background-animation 3s linear infinite;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('BG.png') center/cover no-repeat;
+    color: white;
     overflow: hidden;
 }
 
-/* Blur layer behind text */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    backdrop-filter: blur(10px);
-    background: rgba(0,0,0,0.3); /* Optional darker overlay */
+    background: url('BG.png') center/cover no-repeat;
+    filter: blur(15px);
+    transform: scale(1.1); /* Removes blur cropping */
     z-index: 1;
 }
 
-/* Text stays ABOVE blur */
-.hero-content {
+.hero .container,
+.hero h1,
+.hero .btn {
     position: relative;
-    z-index: 2;
+    z-index: 2;     /* Text stays on top, NOT blurred */
 }
+    
+
 @keyframes hero-background-animation {
     from { background-position: 0% 50%; }
     to { background-position: 100% 50%; }
