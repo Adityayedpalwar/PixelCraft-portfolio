@@ -43,8 +43,8 @@ body {
 }
 /* Hero Section Styles */
 .hero {
-    background-image:url('BG.png');
     backdrop-filter: blur(10px);
+    background-image:url('BG.png');
     background-size: 70px;
     background-position: 0% 50%;
     height: 90vh;
