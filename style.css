@@ -21,8 +21,9 @@ body {
 
 .navbar .container {
     display: flex; /* fixed from PixelCraft */
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
+    gap:50px;
     background-color: #f02b50;
     padding: 5px 20px;
     border-radius: 70px;
@@ -50,10 +51,14 @@ body {
 }
 /* Logo / Portfolio text */
 .navbar .logo {
-    color: white; /* make it visible */
+    position: absolute; /* horizontally centered in navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+}
 }
 /* Hero Section Styles */
 .hero {
