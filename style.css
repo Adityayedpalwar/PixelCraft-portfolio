@@ -36,7 +36,7 @@ body {
 }
 .nav-links a:hover {
     text-decoration: none;
-    background-color: #ffff00;
+    background-color: #fff000;
     margin-right:300px;
     color: black; 
 }
@@ -44,7 +44,7 @@ body {
 .hero {
     background-image:url('BG.png');
     background-size: 70px;
-    background-position : 0% 50%;
+    background-position: 0% 50%;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -157,6 +157,7 @@ animation: hero-background-animation 3s linear infinite;
 :fullscreen video {
     width: 100vw;
     height: 100vh;
+    padding:100px;
     object-fit: cover;
     object-position: center;
     background: black;
