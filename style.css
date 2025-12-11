@@ -22,7 +22,7 @@ body {
 
 .navbar .container {
     display: flex; /* fixed from PixelCraft */
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     
     background-color: #f02b50;
