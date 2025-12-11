@@ -134,8 +134,8 @@ animation: hero-background-animation 3s linear infinite;
 
 :fullscreen img,
 :fullscreen video {
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     object-fit: contain;
     background: black;
 }
