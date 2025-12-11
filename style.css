@@ -48,6 +48,13 @@ body {
     background-color: #fff000;
     color: black;
 }
+/* Logo / Portfolio text */
+.navbar .logo {
+    color: white; /* make it visible */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
 /* Hero Section Styles */
 .hero {
     
