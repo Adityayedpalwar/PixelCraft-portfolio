@@ -51,7 +51,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    text-animation:fade-in;
+    text-animation:zoom-in;
+    font-size: 10px;
     color: white;
 animation: hero-background-animation 3s linear infinite; 
 }
