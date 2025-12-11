@@ -150,3 +150,13 @@ animation: hero-background-animation 3s linear infinite;
 .portfolio-item video:hover {
     transform: scale(1.02);
 }
+
+
+:fullscreen img,
+:fullscreen video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    object-position: center;
+    background: black;
+}
