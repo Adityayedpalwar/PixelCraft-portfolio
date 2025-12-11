@@ -68,6 +68,7 @@ body {
 .hero {
     background-image:url('BG.png');
     background-size: 70px;
+    backdrop-filter:blur(10px)
     background-position : 0% 50%;
     height: 90vh;
     display: flex;
@@ -76,7 +77,7 @@ body {
     text-align: center;
     text-animation:fade-in;
     color: white;
-animation: hero-background-animation 3s linear infinite; 
+animation: hero-background-animation 1s linear infinite; 
 }
 @keyframes hero-background-animation {
     from { background-position: 0% 50%; }
@@ -96,11 +97,13 @@ animation: hero-background-animation 3s linear infinite;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;    
+    border-radius: 5px; 
+    backdrop-filter:blur(10px);
 }
 
 .hero .btn:hover {
     background-color: gold;
+    backdrop-filter:blur(10px)
 }
 
 /* Portfolio Section Styles */
