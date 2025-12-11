@@ -64,21 +64,6 @@ body {
 }
 /* Hero Section Styles */
 .hero {
-    
-    background-image:url('BG.png');
-    background-size: 70px;
-    background-position: 0% 50%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-animation:zoom-in;
-    font-size: 10px;
-    color: white;
-animation: hero-background-animation 3s linear infinite; 
-}
-.hero {
     position: relative;
     height: 90vh;
     display: flex;
@@ -89,19 +74,18 @@ animation: hero-background-animation 3s linear infinite;
     overflow: hidden;
 }
 
-/* BLURRED FULL-SCREEN BG LAYER */
+/* BLURRED BG LAYER */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background-image: url('BG.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40px 40px; /* your 1cm² approx */
-    
+    background-repeat: repeat; /* tiles the small image */
+    background-size: 40px 60px; /* small size */
     filter: blur(15px);
-    transform: scale(1.1);  /* fixes blur cropping */
+    transform: scale(1.1); 
     z-index: 1;
+    animation: moveBg 10s linear infinite;
 }
 
 /* TEXT + BUTTON LAYER */
@@ -112,17 +96,16 @@ animation: hero-background-animation 3s linear infinite;
     z-index: 2;
 }
 
-
-@keyframes hero-background-animation {
-    from { background-position: 0% 50%; }
-    to { background-position: 100% 50%; }
+/* Background animation */
+@keyframes moveBg {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 0; } /* moves horizontally */
 }
 
-
+/* Hero Text & Button */
 .hero h1 {
-    font-size: 10px;
+    font-size: 3rem;
     margin-bottom: 20px;
-    backdrop-filter: blur(10px);
 }
 
 .hero .btn {
@@ -131,13 +114,11 @@ animation: hero-background-animation 3s linear infinite;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px; 
-    backdrop-filter: blur(10px);
+    border-radius: 5px;
 }
 
 .hero .btn:hover {
     background-color: gold;
-    backdrop-filter: blur(10px);
 }
 /* Portfolio Section Styles */
 .portfolio {
