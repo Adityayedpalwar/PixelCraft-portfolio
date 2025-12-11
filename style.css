@@ -17,6 +17,7 @@ body {
 .navbar {
     background-color: black;
     padding: 10px;
+    text-align:center;
 }
 
 .navbar .container {
@@ -51,14 +52,15 @@ body {
 }
 /* Logo / Portfolio text */
 .navbar .logo {
-    position: absolute; /* horizontally centered in navbar */
-    left: 50%;
-    transform: translateX(-50%);
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    display: inline-block;
+    border-bottom: 5px solid #f02b50; /* pink bar */
+    padding-bottom: 5px;
 }
+
 }
 /* Hero Section Styles */
 .hero {
