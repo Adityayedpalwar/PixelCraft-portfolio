@@ -16,9 +16,6 @@ body {
 /* Navbar Styles */
 .navbar {
     background-color: black;
-    backdrop-filter: blur(10px);
-    position:sticky;
-    top:0;
     align-item:center;    
     padding: 0px 0;
     margin-left: 10px;
